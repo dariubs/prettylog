@@ -1,0 +1,27 @@
+{
+  "name": "prettylog",
+  "version": "0.0.1",
+  "description": "pretty console.log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dariubs/prettylog.git"
+  },
+  "bin": {
+    "statuscode": "index.js"
+  },
+  "keywords": [
+    "log",
+    "print",
+    "colorful"
+  ],
+  "author": "Dariush Abbasi < poshtehani@gmail.com >",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dariubs/prettylog/issues"
+  },
+  "homepage": "https://github.com/dariubs/prettylog#readme"
+}
