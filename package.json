@@ -1,7 +1,7 @@
 {
   "name": "prettylog",
-  "version": "0.0.1",
-  "description": "pretty console.log",
+  "version": "0.1.0",
+  "description": "pretty command line apps outputs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

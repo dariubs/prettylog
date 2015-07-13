@@ -1,4 +1,26 @@
+//     PrettyLog 0.1.0
+//     (c) 2015 Dariush Abbasi
+//     PrettyLog may be freely distributed under the MIT license.
+
 "use strict";
+
+var prettylog = module.exports = {
+		log: function(txt, color, opt){
+			console.log(getFormatedText(txt,color, opt));
+		},
+		error: function(txt, color, opt){
+			console.error(getFormatedText(txt,color, opt));
+		},
+		warn: function(txt, color, opt){
+			console.warn(getFormatedText(txt,color, opt));
+		},
+		info: function(txt, color, opt){
+			console.info(getFormatedText(txt,color, opt));
+		},
+		trace: function(txt, color, opt){
+			console.info(getFormatedText(txt,color, opt));
+		}
+};
 
 var regularColorList = {
 	black: '\e[0;30m',
@@ -36,12 +58,9 @@ var underlineColorList = {
 
 
 
-var prettylog = module.exports = function(txt, color, opt){
-	console.log(getFormatedText(txt,color, opt));
-};
 
 function getFormatedText(txt, color, opt){
-	return getColor(color, opt) + txt;
+	return getColor(color.toLowerCase, opt.toLowerCase) + txt;
 }
 
 function getColor(color, opt){
