@@ -13,16 +13,28 @@ $ npm install prettylog
 ## Usage
 
 ```javascript
-var pl = require('prettylog');
+var pretty = require('prettylog');
 
-pl.log('Text here', 'color','option');
-pl.info('Text here', 'color','bold');
-pl.warn('Text here', 'color','bold');
-pl.error('Text here', 'color','bold');
-pl.trace('Text here', 'color','bold');
+pretty.log('Text here'[,'color','option']);
+
+//examples
+pretty.log('Text Here');
+pretty.info('Text here', 'blue',);
+pretty.warn('Text here', 'yellow','underline');
+pretty.error('Text here', 'red','regular');
+pretty.trace('Text here', 'cyan','bold');
 ```
 
-###Colors
+##Functions
+
+* log
+* info
+* warn
+* error
+* trace
+
+##Colors
+
 * black
 * red
 * green
@@ -33,6 +45,7 @@ pl.trace('Text here', 'color','bold');
 * white
 
 ###Options
+
 * Regular **default**
 * Bold
 * Underline

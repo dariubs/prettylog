@@ -4,6 +4,7 @@
 
 "use strict";
 
+
 var prettylog = module.exports = {
 		log: function(txt, color, opt){
 			console.log(getFormatedText(txt,color, opt));
@@ -33,7 +34,6 @@ var regularColorList = {
 	white: '\e[0;37m'
 };
 
-
 var boldColorList = {
 	black: '\e[1;30m',
 	red: '\e[1;31m',
@@ -57,11 +57,10 @@ var underlineColorList = {
 };
 
 
-
-
-function getFormatedText(txt, color, opt){
+function getFormatedText(txt="", color="black", opt="regular"){
 	return getColor(color.toLowerCase, opt.toLowerCase) + txt;
 }
+
 
 function getColor(color, opt){
 	var colors;
